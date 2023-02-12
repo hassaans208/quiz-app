@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import ProgressBar from 'react-bootstrap/ProgressBar';
+// import Button from 'react-bootstrap/Button';
+// import ProgressBar from 'react-bootstrap/ProgressBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/Home';
 // import PakFlag from './pak.png'
-import PakFlag from './php.png'
+// import PakFlag from './php.png'
 
 function App() {
   return (
@@ -19,8 +20,7 @@ function App() {
           </p>
         </div>
         <div className='flex flex-row gap-x-3 me-3'>
-          <button type="" className='bg-white m-2 px-3 py-1 border border-slate-800 hover:bg-slate-900'>Home</button>
-          <button type="">Home</button>
+          <button type="" className='bg-white m-2 px-3 py-1 border border-slate-800 hover:bg-indigo-900'>Home</button>
         </div>
       </div>
       <Container fluid className='border-2 border-black'>
@@ -30,7 +30,8 @@ function App() {
             <p className='text-sm'>Challenge Your Knowledge</p>
           </Col>
         </Row>
-        <Row lg={{ span: 6, offset: 6 }} className='bg-white border-2 border-x-0 border-black'>
+<Home />
+        {/* <Row lg={{ span: 6, offset: 6 }} className='bg-white border-2 border-x-0 border-black'>
           <Col className="text-center mt-1">
             <ProgressBar className='mx-2 h-2 m-2' variant='info' now={45} animated label={`45%`} />
           </Col>
@@ -63,7 +64,10 @@ function App() {
               <Button style={{ width: "300px" }} variant="info">CSS</Button>
             </Col>
           </Row>
-        </Container>
+        </Container> */}
+
+
+
       </Container>
     </div>
   );
